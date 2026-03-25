@@ -87,14 +87,12 @@ body {
 /* Donation Dropdown Selection End */
 /* Card Boxes Start */
 .card{
-  display: flex;
+  display: inline-flex;  
   justify-content: center;
 }
 .animal-list{
   width: 70%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  display: flex;
   gap: 5%;
 }
 .box {
@@ -130,10 +128,10 @@ body {
     float: right;
     background-color: lightgrey;
     color: black;
-    margin: 5px;
     text-decoration: none;
     border: 1px solid black;
     font-size: clamp(10px, 1rem, 20px);
+    margin: 5px;
 }
 /* Card Boxes End */
 /* Donate Page Start */
