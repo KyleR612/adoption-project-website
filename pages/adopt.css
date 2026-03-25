@@ -1,0 +1,337 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(4, 11, 78);
+    color: white;
+    justify-content: center;
+}
+.adopt {
+    color: rgb(9, 255, 9);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(255, 196, 0);
+    text-decoration: underline;
+    position: sticky;
+}
+.adopt1 {
+    color: rgb(249, 133, 0);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(0, 118, 118);
+    text-decoration: underline;
+    position: sticky;
+}
+.adopt2 {
+    color: rgb(236, 96, 58);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(0, 118, 118);
+    text-decoration: underline;
+    position: sticky;
+}
+
+/* Navigation Menus Start */
+.dropdown {
+    position: relative;
+    float: left;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px;
+    font-size: 5px;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navigation Menus End */
+
+/* Donation Dropdown Selection Start */
+.button-Dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbuttons {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.button-Dropdown-content {
+    display: none;
+    background-color: white;
+    padding: 5px 5px;
+}
+.button-Dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+.Dropdown:hover .button-Dropdown-content {
+    display: block;
+}
+.show {
+    display: block;
+}
+/* Donation Dropdown Selection End */
+
+.card{
+  display: flex;
+  justify-content: center;
+}
+.animal-list{
+  width: 70%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.donate-list{
+  width: 70%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+}
+.box {
+  width: 280px;
+  height: 500px;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  background-color: white;
+}
+.box .img-box{
+  height: 50%;
+}
+.box .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .txt-box {
+  height: 30%;
+  color: black;
+  font-size: 25px;
+}
+.box .txt-box h1{
+  font-size: 30px;
+  padding: 6px;
+  height: 0px;
+  color: black;
+}
+.font {
+    font-size: 20px;
+}
+.font1 {
+    font-size: 24px;
+}
+.btn1 {
+    float: right;
+    position: relative;
+    margin-top: 27px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn2 {
+    float: right;
+    position: relative;
+    margin-top: 18px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn3 {
+    float: right;
+    position: relative;
+    margin-top: -45px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn4 {
+    float: right;
+    position: relative;
+    margin-top: -18px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn5 {
+    float: right;
+    position: relative;
+    margin-top: -2px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn6 {
+    float: right;
+    position: relative;
+    margin-top: -30px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn7 {
+    float: right;
+    position: relative;
+    margin-top: -47px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn8 {
+    float: right;
+    position: relative;
+    margin-top: 25px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn9 {
+    float: right;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn10 {
+    float: right;
+    position: relative;
+    margin-top: 48px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn11 {
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn12 {
+    float: right;
+    position: relative;
+    margin-top: -1px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn13 {
+    float: right;
+    position: relative;
+    margin-top: 25px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn14 {
+    float: right;
+    position: relative;
+    margin-top: 25px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.btn15 {
+    float: right;
+    position: relative;
+    margin-top: 1px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.section {
+    margin-top: 50px;
+}
+.section1 {
+    margin-top: 5px;
+}
+.donate {
+    color: blue;
+    background-color: orange;
+    text-decoration: underline;
+    display: inline-block;
+}
+.donate-font {
+    font-size: 21px;
+    padding: 3px 3px 3px 3px;
+}
+#FreshPet {
+    margin-right: 35px;
+}
