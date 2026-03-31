@@ -114,7 +114,6 @@ body {
 .box .txt-box {
     height: 30%;
     color: black;
-    font-size: 25px;
 }
 .box .txt-box h1{
     font-size: 1.5rem;
@@ -122,17 +121,27 @@ body {
     color: black;
 }
 .font {
-    font-size: clamp(10px, 2rem, 20px);
+    font-size: clamp(10px, 1.5rem, 20px);
 }
 .btn1 {
     float: right;
     background-color: lightgrey;
+    position: absolute;
     color: black;
     text-decoration: none;
     border: 1px solid black;
-    font-size: clamp(10px, 1rem, 20px);
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+.btn2 {
+    float: right;
+    background-color: lightgrey;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 48px;
+    margin-left: 140px;
 }
 .index-font {
     padding: 10px;
