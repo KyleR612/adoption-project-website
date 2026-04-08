@@ -86,7 +86,6 @@ body {
 }
 /* Donation Dropdown Selection End */
 /* Card Boxes Start */
-<<<<<<< HEAD
 .card {
     position: relative;
     padding: 16px;
@@ -113,7 +112,7 @@ body {
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: 1;
     content: "";
-=======
+}
 .card{
     display: flex;  
     justify-content: center;
@@ -173,7 +172,6 @@ body {
 }
 .index-font {
     padding: 10px;
->>>>>>> 8d23240c02cf56b346771b8fd8bdcc21bb59fe25
 }
 /* Card Boxes End */
 /* Donate Page Start */
