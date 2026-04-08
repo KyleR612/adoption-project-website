@@ -1,0 +1,198 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(4, 11, 78);
+    color: white;
+    justify-content: center;
+}
+/* header tags for pages */
+.adopt {
+    color: rgb(9, 255, 9);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(255, 196, 0);
+    text-decoration: underline;
+    position: sticky;
+}
+.adopt1 {
+    color: rgb(249, 133, 0);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(0, 118, 118);
+    text-decoration: underline;
+    position: sticky;
+}
+.adopt2 {
+    color: rgb(236, 96, 58);
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgb(0, 118, 118);
+    text-decoration: underline;
+    position: sticky;
+}
+/* header tags for pages */
+/* Navigation Menus Start */
+.dropdown {
+    position: relative;
+    float: left;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px;
+    font-size: 5px;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navigation Menus End */
+/* Donation Dropdown Selection Start */
+.button-Dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbuttons {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.button-Dropdown-content {
+    display: none;
+    background-color: white;
+    padding: 5px 5px;
+}
+.button-Dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+.Dropdown:hover .button-Dropdown-content {
+    display: block;
+}
+.show {
+    display: block;
+}
+/* Donation Dropdown Selection End */
+/* Card Boxes Start */
+.card{
+    display: flex;  
+    justify-content: center;
+}
+.animal-list{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
+    background-color: white;
+}
+.box .img-box {
+    height: 50%;
+}
+.box .img-box img {
+    width: 100%;
+    height: 100%;
+}
+.box .txt-box {
+    height: 30%;
+    color: black;
+}
+.box .txt-box h1{
+    font-size: 1.5rem;
+    height: 15%;
+    color: black;
+}
+.font {
+    font-size: clamp(10px, 1.5rem, 20px);
+}
+.btn1 {
+    float: right;
+    background-color: lightgrey;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+.btn2 {
+    float: right;
+    background-color: lightgrey;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 48px;
+    margin-left: 140px;
+}
+.index-font {
+    padding: 10px;
+}
+/* Card Boxes End */
+/* Donate Page Start */
+.btn7 {
+    float: right;
+    position: relative;
+    margin-top: -47px;
+    margin-right: 10px;
+    border: solid black 1px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: lightgray;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.donate {
+    color: blue;
+    background-color: orange;
+    text-decoration: underline;
+    display: inline-block;
+}
+.donate-box .img-box-donate {
+    height: 50%;
+}
+.donate-box img {
+    width: 100%;
+    height: 100%;
+}
+.donate-font {
+    font-size: 21px;
+    padding: 3px 3px 3px 3px;
+}
+.donate-list{
+    width: 70%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+}
+#FreshPet {
+    margin-right: 35px;
+}
+/* Donate Page End */
+/* Back to Home Page Button */
+.home-button {
+    color: white;
+    float: left;
+    margin-top: 190px;
+    margin-left: 10px;
+}
+/* Back to Home Page Button */
