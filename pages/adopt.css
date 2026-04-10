@@ -131,13 +131,14 @@ body {
 }
 .card-title {
     color: black;
-    font-size: clamp(20px, 2rem, 30px)
+    font-size: 40px;
 }
 .card-description {
     color: black;
+    font-size: 25px;
 }
 .index-font {
-    font-size: clamp(12px, 2rem, 20px);
+    font-size: 25px;
 }
 @media (min-width: 768px) {
     .card {
