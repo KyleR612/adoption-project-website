@@ -113,9 +113,9 @@ body {
     content: "";
     position: absolute;
     top: 120%;
-    left: 8%;
+    left: 5%;
     transform: translate(-10%, -50%) scale(0.85);
-    width: 30%;
+    width: 28%;
     height: 50%;
     background-color: transparent;
     background-position: center center;
