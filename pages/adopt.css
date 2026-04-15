@@ -103,16 +103,50 @@ body {
     padding: 0;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,.12);
-    overflow: hidden;
+    overflow: visible;
 }
 .card:hover {
     box-shadow: 0 4px 16px white;
 }
 .card-img-wrapper {
+    position: relative;
     width: 100%;
     display: block;
     aspect-ratio: 4 / 3;
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card.dog .card-img-wrapper::after,
+.card.cat .card-img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 45%;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: none;
+    pointer-events: none;
+}
+.card.dog:hover .card-img-wrapper::after {
+    background-image: url('../images/hey-hi-dog.gif');
+    opacity: 1;
+    animation: showOverlay 0.3s ease-in-out forwards;
+}
+.card.cat:hover .card-img-wrapper::after {
+    background-image: url('../images/peach-cat-mochi-mochi.gif');
+    opacity: 1;
+    animation: showOverlay 0.3s ease-in-out forwards;
+}
+@keyframes showOverlay {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 .card-img-wrapper img {
     width: 100%;
@@ -153,6 +187,7 @@ body {
     .card-img-wrapper {
         flex: 0 0 50%;
         min-height: 0;
+        border-radius: 10px 0 0 10px;
     }
 
     .card-content {
