@@ -55,9 +55,39 @@
             
             <label for="references">Please provide references (e.g., vet, previous pet owners):</label><br>
             <textarea id="references" name="references" rows="3"></textarea><br><br>
-            
+
             <input type="submit" value="Submit Adoption Application">
         </form>
+        <div id="popupOverlay" class="overlay">
+            <div class="popup">
+                <h2>Thank you for your application!</h2>
+                <p>We will review your application and get back to you soon.</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('.adoption-form');
+                const popupOverlay = document.getElementById('popupOverlay');
+                const closePopup = document.getElementById('closePopup');
+
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent actual form submission
+                    popupOverlay.classList.add('active');
+                });
+
+                closePopup.addEventListener('click', function() {
+                    popupOverlay.classList.remove('active');
+                });
+
+                // Optional: Close popup when clicking outside
+                popupOverlay.addEventListener('click', function(event) {
+                    if (event.target === popupOverlay) {
+                        popupOverlay.classList.remove('active');
+                    }
+                });
+            });
+        </script>
         <a href="../index.html" class="home-button">Back To Home</a>
         <footer>Copyright &copy; Kyle Radant</footer>
     </body>

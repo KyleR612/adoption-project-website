@@ -248,8 +248,9 @@ body {
 .home-button {
     color: white;
     float: left;
-    margin-top: 190px;
+    margin-top: 120px;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 /* Back to Home Page Button */
 
@@ -262,13 +263,11 @@ body {
     border-radius: 10px;
     text-align: left;
 }
-
 .adoption-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .adoption-form input[type="text"],
 .adoption-form input[type="email"],
 .adoption-form input[type="tel"],
@@ -281,11 +280,9 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 .adoption-form input[type="radio"] {
     margin-right: 5px;
 }
-
 .adoption-form input[type="submit"] {
     background-color: #04AA6D;
     color: white;
@@ -295,8 +292,35 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
-
 .adoption-form input[type="submit"]:hover {
     background-color: #039c5c;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup {
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 80%;
+}
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.overlay.active {
+    display: flex;
 }
 /* Adoption Form Styles */

@@ -36,7 +36,7 @@
             <label for="reason">Why do you want to adopt Orange?</label><br>
             <textarea id="reason" name="reason" rows="4"></textarea><br><br>
             
-            <label for="experience">Do you have experience with dogs? Please describe:</label><br>
+            <label for="experience">Do you have experience with cats? Please describe:</label><br>
             <textarea id="experience" name="experience" rows="4"></textarea><br><br>
             
             <label for="home">Type of home:</label><br>
@@ -57,6 +57,36 @@
             <textarea id="references" name="references" rows="3"></textarea><br><br>
             
             <input type="submit" value="Submit Adoption Application">
+            <div id="popupOverlay" class="overlay">
+            <div class="popup">
+                <h2>Thank you for your application!</h2>
+                <p>We will review your application and get back to you soon.</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('.adoption-form');
+                const popupOverlay = document.getElementById('popupOverlay');
+                const closePopup = document.getElementById('closePopup');
+
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent actual form submission
+                    popupOverlay.classList.add('active');
+                });
+
+                closePopup.addEventListener('click', function() {
+                    popupOverlay.classList.remove('active');
+                });
+
+                // Optional: Close popup when clicking outside
+                popupOverlay.addEventListener('click', function(event) {
+                    if (event.target === popupOverlay) {
+                        popupOverlay.classList.remove('active');
+                    }
+                });
+            });
+        </script>
         </form>
         <a href="../index.html" class="home-button">Back To Home</a>
         <footer>Copyright &copy; Kyle Radant</footer>
