@@ -20,6 +20,44 @@
         </div>
         <img src="../images/bruce.webp" width="450" height="350">
         <h2>If you would like to adopt Bruce please fill out the form below ⬇️</h2>
+        <form class="adoption-form" action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3"></textarea><br><br>
+            
+            <label for="reason">Why do you want to adopt Bruce?</label><br>
+            <textarea id="reason" name="reason" rows="4"></textarea><br><br>
+            
+            <label for="experience">Do you have experience with dogs? Please describe:</label><br>
+            <textarea id="experience" name="experience" rows="4"></textarea><br><br>
+            
+            <label for="home">Type of home:</label><br>
+            <select id="home" name="home">
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="condo">Condo</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <label for="otherpets">Do you have other pets?</label><br>
+            <input type="radio" id="yes" name="otherpets" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="otherpets" value="no">
+            <label for="no">No</label><br><br>
+            
+            <label for="references">Please provide references (e.g., vet, previous pet owners):</label><br>
+            <textarea id="references" name="references" rows="3"></textarea><br><br>
+            
+            <input type="submit" value="Submit Adoption Application">
+        </form>
         <a href="../index.html" class="home-button">Back To Home</a>
         <footer>Copyright &copy; Kyle Radant</footer>
     </body>

@@ -252,3 +252,51 @@ body {
     margin-left: 10px;
 }
 /* Back to Home Page Button */
+
+/* Adoption Form Styles */
+.adoption-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.adoption-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.adoption-form input[type="text"],
+.adoption-form input[type="email"],
+.adoption-form input[type="tel"],
+.adoption-form select,
+.adoption-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.adoption-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.adoption-form input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.adoption-form input[type="submit"]:hover {
+    background-color: #039c5c;
+}
+/* Adoption Form Styles */
