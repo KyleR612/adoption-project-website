@@ -241,11 +241,15 @@ body {
 }
 /* Back to Home Page Button */
 .home-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
     color: white;
-    float: left;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 /* Adoption Form Styles */
 .adoption-form {
@@ -343,9 +347,24 @@ body {
     font-size: 21px;
     margin-top: 90px;
 }
+.contact-image {
+    margin-bottom: 5px;
+}
+.contact-email {
+    margin-top: 20px;
+}
 .email {
     color: white;
     text-decoration: underline;
+}
+/* Information Center */
+.information {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.first-info {
+    margin-top: 70px;
 }
 /* Footer  */
 footer {
