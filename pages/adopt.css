@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 body {
     position: relative;
@@ -8,6 +9,12 @@ body {
     text-align: center;
     background-color: rgb(4, 11, 78);
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    flex: 1;
 }
 /* header tags for pages */
 .adopt {
@@ -87,7 +94,7 @@ body {
 .show {
     display: block;
 }
-/* Card Boxes */
+/* Card Boxes for Index.html and Donate.html */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -160,6 +167,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 .card-button {
     display: flex;
@@ -204,58 +212,93 @@ body {
         justify-content: center;
     }
 }
-/* Donate Page */
-.btn7 {
-    float: right;
-    position: relative;
-    margin-top: -47px;
-    margin-right: 10px;
-    border: solid black 1px;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: lightgray;
-    color: black;
-    padding: 1px 1px 1px 1px;
-}
-.donate {
-    color: blue;
-    background-color: orange;
-    text-decoration: underline;
-    display: inline-block;
-}
-.donate-box .img-box-donate {
-    height: 50%;
-}
-.donate-box img {
-    width: 100%;
-    height: 100%;
-}
+/* Donate Page Cards */
 .donate-font {
     font-size: 21px;
     padding: 3px 3px 3px 3px;
+    margin-top: 80px;
 }
-.donate-list{
-    width: 70%;
+.donate-card {
     display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 5px 5px 5px 5px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    background-color: #70944c;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    overflow: visible;
 }
-#FreshPet {
-    margin-right: 35px;
+.donate-card:hover {
+    box-shadow: 0 4px 16px white;
+}
+.donate-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: visible;
+    border-radius: 10px 10px 0 0;
+    isolation: isolate;
+}
+.donate-card-img-wrapper img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.donate-card-button {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+.donate-card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.donate-card-title {
+    color: white;
+    font-size: 40px;
+}
+.donate-card-description {
+    color: white;
+    font-size: 25px;
+}
+@media (min-width: 768px) {
+    .donate-card {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .donate-card-img-wrapper {
+        flex: 0 0 50%;
+        min-height: 0;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .donate-card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 /* Back to Home Page Button */
 .home-button {
     display: block;
     width: fit-content;
-    margin: 20px 0 0 10px;
+    margin: 20px 0 10px 10px;
     color: white;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
 }
-
 /* Adoption Form Styles */
 .adoption-form {
     max-width: 600px;
