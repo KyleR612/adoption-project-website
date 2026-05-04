@@ -4,6 +4,7 @@
         <title>Adopt an Animal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icon.png" type="image/png">
         <link rel="stylesheet" href="./pages/adopt.css">
     </head>
     <body>
@@ -16,7 +17,7 @@
         <a href="../index.html">Home</a>
         <a href="./pages/Help the Animals.html">Help the Animals</a>
         <a href="./pages/Contact.html">Contact</a>
-        <a href="./pages/Information Center.html">Info</a>
+        <a href="./pages/Information Center.html">Information Center</a>
         <a href="./pages/donate.html">Donate</a>
         </div>
         </div>
@@ -27,7 +28,7 @@
             <a href="./pages/jenny.html" class="card-button">
                 <div class="card-img-wrapper">
                   <img src="./images/jenny.jpeg">
-                </div>  
+                </div>
                 <div class="card-content">
                   <h2 class="card-title">Jenny</h2>
                   <p class="card-description">Jenny is a 5 year old Austrailian Shepard. She loves to go on walks and loves to play. Her favorite toys are ropes and anything to play tug of war with. She will fill your hearts everyday with love and joy!</p>
@@ -164,5 +165,24 @@
         </div>
         </main>
         <footer>Copyright &copy; Kyle Radant</footer>
+        <button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+        <script>
+            // Back to Top functionality
+            window.onscroll = function() {
+                const backToTopBtn = document.getElementById("backToTopBtn");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopBtn.style.display = "block";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
     </body>
 </html>
