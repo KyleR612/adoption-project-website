@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donation Receipt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/icon.png" type="image/png">
+        <link rel="stylesheet" href="../pages/adopt.css">
+    </head>
+    <body>
+        <div class="content">
+        <h1 class="adopt1">Donation Receipt</h1>
+        <div class="dropdown">
+        <button class="dropbtn"><img src="../images/button.png" width="30px" height="30px"></button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html">Home</a>
+        <a href="../pages/Help the Animals.html">Help the Animals</a>
+        <a href="../pages/Contact.html">Contact</a>
+        <a href="../pages/Information Center.html">Information Center</a>
+        <a href="../pages/donate.html">Donate</a>
+        </div>
+        </div>
+        <br>
+        <div class="receipt-container">
+            <h2>Thank you for your donation!</h2>
+            <div class="receipt-details">
+                <p><strong>Item:</strong> <span id="itemName">-</span></p>
+                <p><strong>Quantity:</strong> <span id="itemQuantity">-</span></p>
+                <p><strong>Date:</strong> <span id="donationDate">-</span></p>
+            </div>
+            <p class="receipt-message">Your generous donation will help us provide care for animals in need. Thank you for your support!</p>
+            <button onclick="goHome()" class="receipt-btn">Back to Home</button>
+        </div>
+        </div>
+        <footer>Copyright &copy; Kyle Radant</footer>
+        <a href="../index.html" class="home-button">Back To Home</a>
+        <script>
+            function goHome() {
+                window.location.href = "../index.html";
+            }
+
+            function displayReceipt() {
+                // Get donation info from URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const itemName = urlParams.get('item') || 'Unknown Item';
+                const itemQuantity = urlParams.get('quantity') || 0;
+                
+                // Display the information
+                document.getElementById('itemName').textContent = itemName;
+                document.getElementById('itemQuantity').textContent = itemQuantity;
+                
+                // Display current date
+                const today = new Date();
+                const dateString = today.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+                document.getElementById('donationDate').textContent = dateString;
+            }
+
+            // Display receipt when page loads
+            window.addEventListener('DOMContentLoaded', displayReceipt);
+        </script>
+    </body>
+</html>

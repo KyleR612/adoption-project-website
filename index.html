@@ -165,5 +165,24 @@
         </div>
         </main>
         <footer>Copyright &copy; Kyle Radant</footer>
+        <button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+        <script>
+            // Back to Top functionality
+            window.onscroll = function() {
+                const backToTopBtn = document.getElementById("backToTopBtn");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopBtn.style.display = "block";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
     </body>
 </html>

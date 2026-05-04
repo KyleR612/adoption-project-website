@@ -97,10 +97,12 @@ body {
 /* Card Boxes for Index.html and Donate.html */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
     padding: 1rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .card {
     display: flex;
@@ -216,19 +218,20 @@ body {
 .donate-font {
     font-size: 21px;
     padding: 3px 3px 3px 3px;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 .donate-card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 450px;
+    max-width: 380px;
+    height: 100%;
     background-color: #70944c;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,.12);
-    overflow: visible;
+    overflow: hidden;
 }
 .donate-card:hover {
     box-shadow: 0 4px 16px white;
@@ -236,68 +239,167 @@ body {
 .donate-card-img-wrapper {
     position: relative;
     width: 100%;
+    aspect-ratio: 1;
     display: block;
-    overflow: visible;
+    overflow: hidden;
     border-radius: 10px 10px 0 0;
     isolation: isolate;
+    flex-shrink: 0;
 }
 .donate-card-img-wrapper img {
     width: 100%;
-    max-height: 450px;
+    height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .donate-card-button {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: inherit;
+    height: 100%;
 }
 .donate-card-content {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
 }
 .donate-card-title {
     color: white;
-    font-size: 40px;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
 }
 .donate-card-description {
     color: white;
-    font-size: 25px;
+    font-size: 16px;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
     .donate-card {
-        flex-direction: row;
-        gap: 1rem;
-        align-items: stretch;
+        flex-direction: column;
     }
 
     .donate-card-img-wrapper {
-        flex: 0 0 50%;
-        min-height: 0;
-        border-radius: 10px 0 0 10px;
+        aspect-ratio: 1;
     }
 
     .donate-card-content {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 }
-/* Back to Home Page Button */
-.home-button {
-    display: block;
-    width: fit-content;
-    margin: 20px 0 10px 10px;
+/* Quantity Selector for Food Products */
+.quantity-selector {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.qty-btn {
+    background-color: #04AA6D;
     color: white;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
     border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+    background-color: #039c5c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qty-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 15px;
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.confirm-btn {
+    background-color: rgb(249, 133, 0);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.confirm-btn:hover {
+    background-color: rgb(230, 120, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Receipt Page Styles */
+.receipt-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid #04AA6D;
+}
+
+.receipt-details {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.receipt-details p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.receipt-message {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+    color: rgb(249, 133, 0);
+}
+
+.receipt-btn {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.receipt-btn:hover {
+    background-color: #039c5c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#DogLeash {
+    margin-top: 20px;
 }
 /* Adoption Form Styles */
 .adoption-form {
@@ -389,6 +491,9 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.donate {
+    color: orange;
+}
 /* Contact Page */
 .contact-font {
     font-size: 21px;
@@ -412,6 +517,56 @@ body {
 }
 .first-info {
     margin-top: 100px;
+}
+
+/* Back to Home Page Button */
+.home-button {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+.back-button {
+    float: left;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Back to Top Button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+.back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
 }
 /* Footer  */
 footer {
