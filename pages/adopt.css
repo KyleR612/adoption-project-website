@@ -193,6 +193,7 @@ body {
 }
 .index-font {
     font-size: 25px;
+    margin-top: 80px;
 }
 @media (min-width: 768px) {
     .card {
@@ -398,8 +399,8 @@ body {
     background-color: #039c5c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#DogLeash {
-    margin-top: 20px;
+#General {
+    margin-top: 40px;
 }
 /* Adoption Form Styles */
 .adoption-form {
