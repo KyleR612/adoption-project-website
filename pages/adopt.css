@@ -497,7 +497,6 @@ body {
 .first-info {
     margin-top: 100px;
 }
-
 /* Back to Home Page Button */
 .home-button {
     display: inline-block;
@@ -513,7 +512,14 @@ body {
 }
 .back-button {
     float: left;
-    margin-top: 190px;
-    margin-left: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
-/* Back to Home Page Button */
