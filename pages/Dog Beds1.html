@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dog Leashes</title>
+        <title>Dog Beds</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../images/icon.png" type="image/png">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Adopt an Animal">
+        <meta property="og:description" content="Find your new best friend at our animal shelter.">
+        <meta property="og:image" content="../images/og-image.jpg">
+        <link rel="icon" href="../images/og-image.jpg" type="image/jpg">
         <link rel="stylesheet" href="../pages/adopt.css">
     </head>
     <body>
@@ -13,7 +17,6 @@
         <div class="dropdown">
         <button class="dropbtn"><img src="../images/button.png" width="30px" height="30px"></button>
         <div id="myDropdown" class="dropdown-content">
-        <a href="../index.html">Home</a>
         <a href="../pages/Help the Animals.html">Help the Animals</a>
         <a href="../pages/Contact.html">Contact</a>
         <a href="../pages/Information Center.html">Information Center</a>
@@ -22,7 +25,8 @@
         </div>
         <br>
         <div style="clear: both;"></div>
-        <img src="../images/dog leash.webp" id="DogLeash" width="300" height="400">
+        <a href="../pages/donate.html" class="back-button">← Back to Donations</a>
+        <img src="../images/dog bed1.webp" id="General" width="390" height="400">
         <br>
         <p>Choose the quantity you would like to donate for this item.</p>
         <br>
@@ -42,7 +46,7 @@
         </div>
         <script>
             let quantity = 1;
-            const itemName = "Dog Leash";
+            const itemName = "Dog Bed";
             
             function decreaseQuantity() {
                 if (quantity > 1) {
@@ -82,4 +86,4 @@
         <footer>Copyright &copy; Kyle Radant</footer>
         <a href="../index.html" class="home-button">Back To Home</a>
     </body>
-</html> 
+</html>
